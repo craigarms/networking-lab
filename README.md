@@ -3,6 +3,7 @@
 ## Sommaire
 
 1. Mise en place de l'environement
+
   	1.a Outils de labbing
   		1.a.1 GNS3
   		1.a.2 EVE-NG
@@ -15,6 +16,7 @@
   		1.b.5 Open vSwitch
 
 2. Campus LAN
+
   	2.a Collapsed Core: LAN batiment unique
   		2.a.1 Switching
   		2.a.2 Segmentation des domaines de diffusion: VLAN
