@@ -23,7 +23,7 @@ D'autres thèmes en cours d'écriture sont:
 
 ## Sommaire
 
-1. Mise en place de l'environement ![completion](https://img.shields.io/badge/completion-10%-red) ![difficulty](https://img.shields.io/badge/difficulty-easy-success)
+1. Mise en place de l'environement ![completion](https://img.shields.io/badge/completion-10%25-red) ![difficulty](https://img.shields.io/badge/difficulty-easy-success)
 	1. [Outils de labbing](1.env_setup/labbing_tools.md)
 		1. [GNS3](1.env_setup/labbing_tools.md#gns3)
 		2. [EVE-NG](1.env_setup/labbing_tools.md#eve-ng)
@@ -42,7 +42,7 @@ D'autres thèmes en cours d'écriture sont:
 		3. [Traitement des réseaux docker avec EVE-NG](1.env_setup/docker_briefing.md#traitement-des-reseaux-docker-avec-eve-ng)
 		4. [Conteneur de service lab: Fake server; Ansible](1.env_setup/docker_briefing.md#conteneur-de-service-lab-fake-server-ansible)
 
-2. Campus LAN ![completion](https://img.shields.io/badge/completion-0%-red) 
+2. Campus LAN ![completion](https://img.shields.io/badge/completion-0%25-red) 
 
 	1. [Collapsed Core: LAN batiment unique](2.campus_lan/collapsed_core.md)
 		1. [Switching](2.campus_lan/collapsed_core.md#switching) ![difficulty](https://img.shields.io/badge/difficulty-easy-success)
@@ -72,7 +72,7 @@ D'autres thèmes en cours d'écriture sont:
 		4. Securisation des réseaux
 		5. VxLAN & DMZ Optimization
 
-3. Enterprise WAN ![completion](https://img.shields.io/badge/completion-0%-red) 
+3. Enterprise WAN ![completion](https://img.shields.io/badge/completion-0%25-red) 
 	1. Connectivité exterieur: default route, NAT
 	2. Connectivité multi-site
 		1. Tunnel GRE
@@ -81,14 +81,14 @@ D'autres thèmes en cours d'écriture sont:
 		4. L2TPv3
 		5. MPLS/MB-BGP
 
-4. Network services ![completion](https://img.shields.io/badge/completion-0%-red) 
+4. Network services ![completion](https://img.shields.io/badge/completion-0%25-red) 
 	1. Syslog/ Splunk
 	2. LibreNMS
 	3. Netdisco
 	4. Guacamole Network Bastion
 	5. Ansible
 
-5. Network Automation ![completion](https://img.shields.io/badge/completion-0%-red) 
+5. Network Automation ![completion](https://img.shields.io/badge/completion-0%25-red) 
 	1. Ecriture de playbook:
 		1. Gestion de VLAN
 	2. Introduction à AWX
