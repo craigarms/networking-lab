@@ -21,6 +21,10 @@ D'autres thèmes en cours d'écriture sont:
 * CI/CD Network as Code Pipeline
 * Streamline Troubleshooting avec MQTT, LibreNMS & Ansible
 
+## Diagram du réseau cible
+
+![network-diagram](assets/final-network-diagram.png)
+
 ## Sommaire
 
 1. Mise en place de l'environement ![completion](https://img.shields.io/badge/completion-10%25-red) ![difficulty](https://img.shields.io/badge/difficulty-easy-success)
