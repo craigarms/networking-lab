@@ -16,7 +16,7 @@ Ces outils permettent:
  * L'execution de Binaires
  * La capture de trafic
 
-## GNS3 ![total dl size](https://img.shields.io/badge/total--dl--size-804.2 Mb-orange)
+## GNS3 ![total dl size](https://img.shields.io/badge/total--dl--size-804.2%20Mb-orange)
 
 Initialement une interface graphique pour gérer l'outil d'emulation de plateforme MIPS: dynamips. Aujourd'hui GNS3 est une interface graphique et un orchestrateur de réseaux de test incontournable.
 
