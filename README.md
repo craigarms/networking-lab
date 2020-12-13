@@ -27,7 +27,7 @@ D'autres thèmes en cours d'écriture sont:
 
 ## Sommaire
 
-1. Mise en place de l'environement ![completion](https://img.shields.io/badge/completion-10%25-red) ![difficulty](https://img.shields.io/badge/difficulty-easy-success)
+1. Mise en place de l'environement ![completion](https://img.shields.io/badge/completion-50%25-orange) ![difficulty](https://img.shields.io/badge/difficulty-easy-success)
 	1. [Outils de labbing](1.env_setup/labbing_tools.md)
 		1. [GNS3](1.env_setup/labbing_tools.md#gns3)
 		2. [EVE-NG](1.env_setup/labbing_tools.md#eve-ng)
@@ -36,9 +36,10 @@ D'autres thèmes en cours d'écriture sont:
 	2. [Images de simulation](1.env_setup/device_images.md)
 		1. [IOSv](1.env_setup/device_images.md#iosv)
 		2. [IOL](1.env_setup/device_images.md#iol)
-		3. [Fortigate](1.env_setup/device_images.md#fortigate)
-		4. [FRRouting](1.env_setup/device_images.md#frrouting)
-		5. [Open vSwitch](1.env_setup/device_images.md#open-vswitch)
+		3. [Docker](1.env_setup/device_images.md#conteneurs-docker)
+		4. [Fortigate](1.env_setup/device_images.md#fortigate)
+		5. [FRRouting](1.env_setup/device_images.md#frrouting)
+		6. [Open vSwitch](1.env_setup/device_images.md#open-vswitch)
 		
 	3. [Conteneur docker](1.env_setup/docker_briefing.md)
 		1. [Interfaces et réseaux Docker](1.env_setup/docker_briefing.md#interface-et-reseaux-docker)

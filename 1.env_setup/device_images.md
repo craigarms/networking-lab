@@ -161,6 +161,70 @@ L'installation de Docker supprimera EVE-NG de la VM, il faudra ensuite réinstal
 
 ## Fortigate
 
+Fortigate est l'applicance de firewalling de la société Fortinet, le choix de ce firewall dans les Lab du TP est fait avec les critères suivant:
+ * Très *petite* image
+ * Rapidité de lancement et de fonctionnement
+ * Disponibilité des features (Feature Rich)
+ * Probabilité de rencontrer IRL
+ 
+L'appliance Fortigate que nous utiliserons est une machine virtuelle et donc requière que le support KVM soit activé. (Intel VT)
+
+L'image que nous utiliserons sera:
+ * FGT_VM64_KVM-v5-build1484-FORTINET.out.kvm.qcow2
+ 
+### Installation
+
+#### GNS3
+
+Pour déployer l'appliance sur GNS3 il faut suivre la même procédure que pour l'ajout des IOSv, en passant par l'importation d'appliance GNS3.
+
+L'appliance a besoin d'un disque dur supplémentaire nommé *empty30G.qcow2*.
+
+Une fois ajouté et transféré, vous pourrez ajouter un firewall Fortigate à la topologie.
+
+#### EVE-NG
+
+
+Pour déployer les Fortigate sur EVE-NG il faudra les télécharger sur le serveur en suivant le [How to sur le site d'EVE-NG](https://www.eve-ng.net/index.php/documentation/howtos/howto-add-fortinet-images/)
+
+Notez que l'utilitaire SCP est maintenant disponible *nativement* sur Windows 10 dans la ligne de commande.
+
 ## FRRouting
 
+FRRouting ou Free Range Routing, fork de Quagga, est une suite logiciel de routage tournant sur *nix. ON l'utilisera sous forme de conteneur Docker pour *emuler* des routeurs multiprotocols.
+
+[Lire plus](https://frrouting.org/)
+
+FRR supporte:
+ * BGP
+ * IS-IS
+ * LDP
+ * OSPF
+ * PIM
+ * RIP
+ 
+### Installation
+
+#### GNS3
+
+On préfèrera utiliser un conteneur Docker pour FRR afin d'économiser des ressources systèmes. L'appliance disponible pour FRR dans la marketplace de GNS3 utilise une machine virtuelle, j'ai donc créé un conteneur Docker spécifique: craigarms/frrouting
+
+Pour l'installer passera par le menu des préférences **Edit > Preferences > Docker Containers** et on ajoutera le conteneur `craigarms/frrouting:latest` on laissera tous les autres paramètres par defaut.
+
+On le retrouvera ensuite dans la liste des appliances disponible.
+
+![gns3 appliance list](../assets/gns3_appliance_list.png)
+
+#### EVE-NG
+
+Pour EVE-NG FRR ne fait pas actuellement partie des *OS* supportés, ni sous forme de VM ni sous forme de contenaire Docker. Il faudra donc tenetr l'installation du contenaire en passant par la ligne de commande Docker, et ensuite lier des éléments de la topologie avec le conteneur en utilisant les interfaces veth-pair de Linux.
+
+`docker pull craigarms/frrouting:latest`
+
 ## Open vSwitch
+
+Open vSwitch est au Switching ce qu'est FRR au routing. C'est une suite d'application fournissant une infrastructure de switching multi-niveau sous *nix. Souvent utilisé dans les environement de virtualisation Linux.
+
+Bien qu'un conteneur Docker est disponible, ce TP n'est pas assez mature pour l'intégrer.
+
+Pour jouer avec OVS vous pouvez déployer l'image du conteneur via `docker pull openvswitch/ovs`
