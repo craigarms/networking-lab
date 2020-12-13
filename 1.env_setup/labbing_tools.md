@@ -138,7 +138,7 @@ Dans le cadre de son programme DevNet, Cisco met à disposition des cours ainsi 
 
 Après vous être loggué ou inscrit sur le site du DevNet, rendez vous dans la section **Discover > Sandbox Remote Labs**, ici vous trouverez tous les lab utilisables. Certain requièrent une réservation (souvent instantanée) d'autres sont *always-on*.
 
-![devnet sandbox list](..assets/devnet_sandbox_list.png)
+![devnet sandbox list](../assets/devnet_sandbox_list.png)
 
 Le Lab permettant m'utilisation de Cisco VIRL se nomme **Multi-IOS Cisco Test Network**, reservez le pour la période souhaité.
 
