@@ -74,10 +74,90 @@ Pour les lab de ce TP on utilisera les versions:
 
 #### GNS3
 
+Pour déployer les IOL sur GNS3 il faut suivre la même procédure que pour l'ajout des IOSv, en passant par l'importation d'appliance GNS3.
+
+Pour que les binaires s'exécutent correctement il faudra générer une clef de licence unique associé au nom de l'hôte GNS3, et ensuite le mettre dans l'interface du client lourd sous **Edit > Preferences > IOS on UNIX**
+
+![iourc](../assets/gns3_iourc.png)
+
 #### EVE-NG
 
 Pour déployer les IOL sur EVE-NG il faudra les télécharger sur le serveur en suivant le [How to sur le site d'EVE-NG](https://www.eve-ng.net/index.php/documentation/howtos/howto-add-cisco-iol-ios-on-linux/)
 
+
+## Conteneurs Docker
+
+Docker est un système de contenerisation permettant d'executer des applications dans des prisons virtuelle; similaire aux jail FTP qui vous dit que vous êtes dans "/" (à la racine) alors qu'en fait vous êtes dans un sous dossier utilisateur du type "/home/user1".
+
+L'objectif de la contenerisation est identique à l'idée de sandboxing applicatif; au detail près qu'un contenaire comporte toutes les librairies dont l'application à besoin pour fonctionner et donc se *transforme* en paquet ultra-portable puisqu'il se suffit à lui même.
+
+Un conteneur peut supporter un seul binaire ou bien une arborescence applicative complexe; jusqu'a pouvoir conteneriser des OS entier avec interface graphique.
+
+Dans les lab du TP nous nous appuyerons sur des conteneurs pour:
+ * Tester le bon fonctionnement du Lab
+ * Lancer des applications de service réseau
+ 
+### GNS3
+
+Dans la VM GNS3 docker est installé et prêt à fonctionner, il suffit de connaitre le nom de l'image que vous souhaitez.
+
+Pour rendre une image de conteneur disponible à l'insertion dans une topologie il faut soit:
+ * Connaitre son nom et release tag [docker hub](http://hub.docker.com)
+ * L'avoir préalablement téléchargé sur la VM GNS3 (docker pull)
+ * L'avoir préalablement construite sur la VM GNS3 (docker build)
+ 
+Ensuite l'ajout se fera via le menu des préférences **Edit > Preferences > Docker containers > New**
+
+![docker containers](../assets/gns3_docker.png)
+
+### EVE-NG
+
+Sur EVE-NG l'utilisation de docker est limité de base aux versions payantes. Il faudra donc ruser pour intégrer des conteneurs à la topologie.
+
+L'installation de Docker supprimera EVE-NG de la VM, il faudra ensuite réinstaller EVE-NG en effectuant une modification du package .deb pour forcer l'installation malgrès la présence de Docker.
+
+#### Installation de Docker sur Ubuntu Xenial
+
+`sudo apt-get update`
+ 
+ `sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common`
+ 
+ `curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`
+ 
+ `sudo apt-key fingerprint 0EBFCD88`
+ 
+ `sudo apt-get update`
+ 
+ `sudo apt-get install docker-ce docker-ce-cli containerd.io`
+ 
+ `docker run hello-world`
+ 
+#### Empêcher la desinstallation de Docker
+
+`echo docker-ce hold | dpkg --set-selections`
+
+`echo docker-ce-rootless-extras hold | dpkg --set-selections`
+
+#### Modifier le package Deb d'EVE-NG et réinstaller
+
+ `sudo apt download eve-ng`
+ 
+ `mkdir eve`
+
+ `dpkg-deb -R eve-ng_*.deb eve/`
+
+ ```sed -i \
+  -e '/^Conflicts: /d' \
+  eve/DEBIAN/control
+  ```
+
+ `chmod 0755 eve/DEBIAN/preinst`
+ 
+ `chmod 0755 eve/DEBIAN/postinst`
+ 
+ `dpkg-deb -b eve`
+ 
+ `dpkg -i eve.deb`
 
 ## Fortigate
 
