@@ -86,7 +86,7 @@ D'autres thèmes en cours d'écriture sont:
 		2. DMVPN
 		3. Chiffrement des Flux
 		4. L2TPv3
-		5. MPLS/MB-BGP
+		5. MPLS/MP-BGP
 
 5. Network services ![completion](https://img.shields.io/badge/completion-0%25-red) 
 	1. Syslog/ Splunk
@@ -97,6 +97,7 @@ D'autres thèmes en cours d'écriture sont:
 
 6. Network Automation ![completion](https://img.shields.io/badge/completion-0%25-red) 
 	1. Ecriture de playbook:
-		1. Gestion de VLAN
+		1. Sauvegarde des configurations
+		2. Gestion de VLAN
 	2. Introduction à AWX
 
