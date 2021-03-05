@@ -63,7 +63,11 @@ D'autres thèmes en cours d'écriture sont:
 		4. [Routage Inter-Vlan](2.campus_lan/collapsed_core.md#inter-vlan-routing)
 			1. [Router on a stick](2.campus_lan/collapsed_core.md#router-on-a-stick) ![difficulty](https://img.shields.io/badge/difficulty-mild-important)
 			2. [Layer 3 switch](2.campus_lan/collapsed_core.md#l3-switching)
-		5. [Securisation des réseaux](2.campus_lan/collapsed_core.md#vlan-security)
+		5. [Securisation des passerelles](2.campus_lan/collapsed_core.md#fhrp)
+			1. HSRP
+			2. VRRP
+			3. GLBP
+		6. [Securisation des réseaux](2.campus_lan/collapsed_core.md#vlan-security)
 			1. [ACLs](2.campus_lan/collapsed_core.md#acl) ![difficulty](https://img.shields.io/badge/difficulty-mild-important)
 			2. [MACLs](2.campus_lan/collapsed_core.md#macl) ![difficulty](https://img.shields.io/badge/difficulty-mild-important)
 			3. [VACLs](2.campus_lan/collapsed_core.md#vacl) ![difficulty](https://img.shields.io/badge/difficulty-hard-critical)
