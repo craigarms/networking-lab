@@ -21,6 +21,12 @@ D'autres thèmes en cours d'écriture sont:
 * CI/CD Network as Code Pipeline
 * Streamline Troubleshooting avec MQTT, LibreNMS & Ansible
 
+## Prérequis
+
+Il faut s'équiper de Notepad++ ainsi qu'un outil de tab pour session SSH pour pas perdre la tête.
+
+Notepad++ peut être rendu plus joli avec le fichier de [langage Cisco](assets/npp_cisco_ios.xml)
+
 ## Diagram du réseau cible
 
 ![network-diagram](assets/final-network-diagram.png)
