@@ -5,7 +5,7 @@ L'objectif de cette section est de configurer et vérifier le fonctionement d'un
 
 Pour démarrer cette section vous configurerez un switch avec 2 hôtes et testerez le bon fonctionement.
 
-![network-diagram](assets/collasped_core_switching.png)
+![network-diagram](../assets/collasped_core_switching.png)
 
 [Configurez](1.env_setup/ansible_validation.md) l'IP de l'hôte Ansible avec les valeurs par défaut
 
