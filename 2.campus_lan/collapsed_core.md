@@ -30,6 +30,12 @@ L'objectif de cette section est de segmenter le domaine de diffusion unique de l
 
 
 ### VLAN Switching: Tags, Trunks, 802.1q
+
+L'objectif de cette section est d'étendre la segmentation à un autre switch, et donc t'étendre le LAN sans perdre le bénéfice des Vlans.
+
+![network-diagram](../assets/collasped_core_2_vlans.png)
+
+
 ### VLANs: VTP, DTP
 ## Redondance des liaisons
 ### Spanning-Tree
