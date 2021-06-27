@@ -7,11 +7,11 @@ Pour démarrer cette section vous configurerez un switch avec 2 hôtes et tester
 
 ![network-diagram](../assets/collasped_core_switching.png)
 
-[Configurez](1.env_setup/ansible_validation.md) l'IP de l'hôte Ansible avec les valeurs par défaut
+[Configurez](../1.env_setup/ansible_validation.md) l'IP de l'hôte Ansible avec les valeurs par défaut
 
-[Configurez](1.env_setup/ansible_validation.md) l'IP de l'hôte 2 avec les valeurs : VLAN = 1 et HOST = 2
+[Configurez](../1.env_setup/ansible_validation.md) l'IP de l'hôte 2 avec les valeurs : VLAN = 1 et HOST = 2
 
-[Validez](1.env_setup/ansible_validation.md) la réussite de cette section avec le playbook 002
+[Validez](../1.env_setup/ansible_validation.md) la réussite de cette section avec le playbook 002
 
 ## Segmentation des domaines de diffusion: VLAN
 ### VLAN & Table CAM
