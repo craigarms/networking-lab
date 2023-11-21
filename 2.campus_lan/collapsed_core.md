@@ -18,7 +18,7 @@ Pour démarrer cette section vous configurerez un switch avec 2 hôtes et tester
 
 L'objectif de cette section est de segmenter le domaine de diffusion unique de la section précédente en multiple domaines grâce aux VLANs
 
-![network-diagram](../assets/collasped_core_2_vlans.png)
+![network-diagram](../assets/collasped_core_vlans.png)
 
 [Reconfigurez](../1.env_setup/ansible_validation.md#configuration-de-lip) l'IP de l'hôte 2 avec les valeurs : VLAN = 10 et HOST = 1
 
@@ -33,7 +33,7 @@ L'objectif de cette section est de segmenter le domaine de diffusion unique de l
 
 L'objectif de cette section est d'étendre la segmentation à un autre switch, et donc t'étendre le LAN sans perdre le bénéfice des Vlans.
 
-![network-diagram](../assets/collasped_core_vlans.png)
+![network-diagram](../assets/collasped_core_2_vlans.png)
 
 
 ### VLANs: VTP, DTP
