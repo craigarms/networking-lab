@@ -100,7 +100,7 @@ Notepad++ peut être rendu plus joli avec le fichier de [langage Cisco](assets/n
 
 5. Network services ![completion](https://img.shields.io/badge/completion-0%25-red) 
 	1. Syslog/ Splunk
-	2. LibreNMS
+	2. LibreNMS or Zabbix
 	3. Netdisco
 	4. Guacamole Network Bastion
 	5. Ansible
@@ -109,5 +109,5 @@ Notepad++ peut être rendu plus joli avec le fichier de [langage Cisco](assets/n
 	1. Ecriture de playbook:
 		1. Sauvegarde des configurations
 		2. Gestion de VLAN
-	2. Introduction à AWX
+	2. Introduction à Ansible Semaphore
 
