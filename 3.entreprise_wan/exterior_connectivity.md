@@ -20,4 +20,21 @@ L'hote Ansible dans le Vlan 1 peut il pinger l'adresse IP "Publique" du CE ?
 
 Peut il pinger l'adresse IP "Publique" du PE1 ?
 
-## Trasnlation d'adresses: NAT
+## Translation d'adresses: NAT
+L'objectif de cette section est de permettre le réseau privé du Campus à accèder aux ressources des réseaux publiques.
+
+Pour celà, nous ne voulons pas propager les réseaux privé, mais emprunter l'IP publique de notre routeur CE qui représentera les connexions efféctuées depuis le LAN.
+
+On appelle cette opération la translation d'adresse, ou Network Address Translation (NAT).
+
+![nat-diagram](../assets/nat.png)
+
+Configurez une access-list standard représentant les adresses internes du Campus que l'on souhaite autoriser à se faire translater.
+
+Activer les interfaces LAN et Publique pour le NAT
+
+Configurez une régle de NAT en utilisant l'access-list en source de la translation, et l'interface Ethernet1/1 (Publique du CE) en adresse de translation.
+
+N'oublier pas de préciser que vous souhaitez autoriser la translation pour plusieurs adresses en utilisant la fonctionatilité NAT-PT (ou PAT), communément appelé "overload".
+
+L'hote Ansible dans le Vlan 1 doit pinger l'adresse IP "Publique" du PE1
