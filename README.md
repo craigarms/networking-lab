@@ -89,8 +89,8 @@ Notepad++ peut être rendu plus joli avec le fichier de [langage Cisco](assets/n
 		4. Securisation des réseaux
 		5. VxLAN & DMZ Optimization
 
-4. Enterprise WAN ![completion](https://img.shields.io/badge/completion-0%25-red) 
-	1. Connectivité exterieur: default route, NAT
+4. Enterprise WAN ![completion](https://img.shields.io/badge/completion-10%25-red) 
+	1. [Connectivité exterieur: default route, NAT](3.entreprise_wan/exterior_connectivity.md#enterprise-wan-se-connecter-a-l-exterieur)
 	2. Connectivité multi-site
 		1. Tunnel GRE
 		2. DMVPN
